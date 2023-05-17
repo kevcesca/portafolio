@@ -1,0 +1,53 @@
+.imgBackground {
+    width: 98.5vw;
+    height: 100vh;
+    display: flex;
+    /* place-content:center;
+    place-items: center; */
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    background: url("./descarga.gif") no-repeat center;
+    background-size: cover;
+    background-position: top;
+}
+
+.character {
+    width: 13vw;
+    height: 12vw;
+    border-radius: inherit;
+    background: url("./nikita-yakovlev-char-jump-export.gif") no-repeat center;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.fire {
+    width: 10vw;
+    height: 10vw;
+    border-radius: inherit;
+    background: url("./robert-menzies-blazing-arrow-games-fireball-1.gif") no-repeat center;
+    background-size: cover;
+    background-position: bottom;
+    z-index: 2;
+}
+
+.characterI {
+    width: 13vw;
+    height: 12vw;
+    border-radius: inherit;
+    background: url("./personaje.gif") no-repeat center;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.fireI {
+    width: 10vw;
+    height: 10vw;
+    border-radius: inherit;
+    background: url("./fireball.gif") no-repeat center;
+    background-size: cover;
+    background-position: bottom;
+    z-index: 2;
+}
