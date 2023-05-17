@@ -1,0 +1,100 @@
+.landing {
+    width: 98.5vw;
+    height: 100vh;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #322fd08c, #3e00718a), url("./tumblr_pm5z65C0hF1qbw2q1o1_1280.gif") no-repeat center;
+    background-size: cover;
+    background-position: top;
+    margin-bottom: 5vh;
+}
+
+.character {
+    /* translate: 35vw 2vw; */
+    margin-left: 35vw;
+    width: auto;
+    height: 100%;
+}
+
+.console {
+    translate: 3.5vw -23rem;
+    width: 90vw;
+    height: 40vh;
+    align-self: center;
+    background-color: #27272b83;
+    position: sticky;
+    border-radius: 2px;
+    border-color: aliceblue;
+    border-style: double;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landingText {
+    color: white;
+    font-size: 2.5vw;
+    margin-left: 3rem;
+    padding-right: 3rem;
+    text-align: left;
+}
+
+
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 767px) {
+
+    .landing {
+        border-radius: 0;
+        margin: 0;
+        height: auto;
+        width: 100%;
+        }
+
+    .character {
+        translate: 0 -26px;
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .console {
+        translate: 0 -30px;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .landingText {
+        font-size: 4vw;
+        margin-left: 1.5rem;
+        padding-right: 1.5rem;
+        text-align: center;
+        margin-right: 0;
+    }
+}
+
+/* Estilos para pantallas medianas */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .character {
+        margin-left: 15%;
+    }
+}
+
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 1024px) {
+    .character {
+        margin-left: 35vw;
+        width: auto;
+        height: 100%;
+    }
+
+    .landingText {
+        font-size: 2.5vw;
+        margin-left: 3rem;
+        padding-right: 3rem;
+        text-align: left;
+    }
+}

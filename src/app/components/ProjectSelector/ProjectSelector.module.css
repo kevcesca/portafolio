@@ -1,0 +1,11 @@
+.selector{
+    width: 98.5vw;
+    height: auto;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #322fd08c, #3e00718a), url("./8b6698a852323f3.gif") no-repeat center;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5vh;
+}

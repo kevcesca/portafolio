@@ -1,0 +1,14 @@
+.imgs{
+    width: 1vw;
+    height: auto;
+}
+
+.playerContainer{
+    width: 50vw;
+    height: 10vh;
+}
+
+.titles{
+    font-size: 1rem;
+    color: white;
+}

@@ -1,0 +1,59 @@
+.cardContainer{
+    position: relative;
+    /* background-color: #2E0249; */
+    border-radius: 5px;
+    border-width: 5px;
+    border-style: double;
+    border-color: #0391aa;
+    transition-duration: 500ms;
+    padding: 10px;
+    margin-bottom: 5vh;
+}
+
+.cardContainer:hover{
+    -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    -ms-transform:scale(1.05);
+    -o-transform:scale(1.05);
+    transform:scale(1.05);
+    transition-duration: 500ms;
+    transition-delay: 10ms;
+    background: url("./marquitoneon2.png") no-repeat center;
+    background-size: cover;
+    background-position: top;
+    /* animation: blink .6s infinite step-end alternate; */
+}
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagesModal{
+    width: 30vw;
+    height: auto;
+}
+
+.modalText{
+    width: 30vw;
+    color: white;
+    font-size: 1.5rem;
+    text-align: start;
+}
+
+.modalStart{
+    width: 30vw;
+    color: white;
+    font-size: 2.4rem;
+    text-align: center;
+    animation: blink .4s infinite step-end alternate;
+}
+
+@keyframes blink {
+    50% {
+        color: transparent;
+        background: none;
+    }
+}

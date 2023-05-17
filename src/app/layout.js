@@ -1,3 +1,6 @@
+import Archer from './components/Archer/Archer'
+import Footer from './components/Footer/Footer'
+import NavBar from './components/NavBar/NavBar'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -10,8 +13,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="es">
+      <head>
+        <title>Kevin Ceron</title>
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"/>
+      </head>
+      <body>
+        <NavBar/>
+        {children}
+        <Footer/>
+      </body>
     </html>
   )
 }

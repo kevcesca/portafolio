@@ -1,0 +1,18 @@
+.fuente{
+    font-family: 'VT323', monospace;
+}
+
+.navBar{
+    background-color:  #570A57;
+}
+
+.player{
+    width: 50vw;
+    height: 15vh;
+}
+
+.logo{
+    margin-right: 1vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
