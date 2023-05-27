@@ -18,5 +18,15 @@ h1{
 
 footer{
   background-color: black;
-  padding: 8vh;
+  padding: 1vw;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background: #2E0249;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #570A57;
+  border-radius: 10px;
 }

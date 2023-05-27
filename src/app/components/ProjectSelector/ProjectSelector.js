@@ -13,7 +13,7 @@ import ejercicios from './ejercicios.png'
 
 export default function ProjectSelector() {
     return (
-        <div className={styles.selector}>
+        <div className={styles.selector} id="projects">
             <h1>Choose a project</h1>
             <Grid container>
 
@@ -43,7 +43,11 @@ export default function ProjectSelector() {
                     />
                 </Grid>
 
-                <Grid item lg={6} display="flex" justifyContent="center" alignItems="center" sx={{ marginBottom: "15px", display: { xs: 'none', sm: 'none', md: 'flex' } }}>                </Grid>
+                <Grid item lg={6} display="flex" justifyContent="center" alignItems="center" sx={{ marginBottom: "15px", display: { xs: 'none', sm: 'none', md: 'flex' } }}>                
+                    <div className={styles.modalContainer}>
+                        <span className={styles.projectText}>Choose a project to start</span>
+                    </div>
+                </Grid>
 
                 <Grid item xs={12} md={6} lg={3} display="flex" justifyContent="center" alignItems="center" flexDirection="column">
                     <Cards

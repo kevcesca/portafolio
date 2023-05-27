@@ -9,3 +9,34 @@
     background-position: center;
     margin-bottom: 5vh;
 }
+
+.projectText{
+    margin-top: 15vh;
+    color: white;
+    font-size: 2vw;
+    animation: blink .6s infinite step-end alternate;
+}
+
+.modalContainer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 55vh;
+    width: 30vw;
+    background-color: #3e00718a;
+    translate: 0 -2.5vw;
+    display: none;
+}
+
+@keyframes blink {
+    50% {
+        color: transparent;
+        background: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .modalContainer{
+        display: flex;
+    }
+}

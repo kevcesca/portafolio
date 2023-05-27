@@ -5,4 +5,5 @@
     background-size: cover;
     border-radius: 50%;
     position: absolute;
+    translate: 0 10vh;
 }

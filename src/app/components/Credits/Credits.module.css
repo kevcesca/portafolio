@@ -1,0 +1,43 @@
+.creditContainer {
+    width: 98.5vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    background: url("./spacebg.gif") no-repeat center;
+    background-size: cover;
+    background-position: top;
+}
+
+.imgBackground{
+    width: 98.5vw;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title{
+    color: white;
+    font-size: 2vw;
+}
+
+.credit{
+    width: 10vw;
+    height: 10vw;
+    border-radius: inherit;
+    background: url("./marquitoneon.png") no-repeat center;
+    background-size: cover;
+    background-position: bottom;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

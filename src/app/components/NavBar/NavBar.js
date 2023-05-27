@@ -16,8 +16,13 @@ import AdbIcon from '@mui/icons-material/Adb';
 import styles from './NavBar.module.css'
 import PlayerContainer from '../Player/PlayerContainer';
 import logo from './logokevito.png'
+import Link from 'next/link';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const paths = [
+    { path: "about", content: 'About me' },
+    { path: "projects", content: 'My projects' },
+    { path: "credits", content: 'Credits' },
+]
 
 
 function NavBar() {
@@ -95,10 +100,13 @@ function NavBar() {
                                 display: { xs: 'block', md: 'none' },
                             }}
                         >
-                            {pages.map((page) => (
-                                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center" className={styles.fuente}>{page}</Typography>
-                                </MenuItem>
+
+                            {paths.map(({ path, content }) => (
+                                <Link key={path} href={`/#${path}`} scroll={true}>
+                                    <MenuItem key={path} onClick={handleCloseNavMenu}>
+                                        <Typography textAlign="center" className={styles.fuente}>{content}</Typography>
+                                    </MenuItem>
+                                </Link>
                             ))}
                         </Menu>
                     </Box>
@@ -127,15 +135,12 @@ function NavBar() {
                         />
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                        {pages.map((page) => (
-                            <Button
-                                key={page}
-                                onClick={handleCloseNavMenu}
-                                className={styles.fuente}
-                                sx={{ my: 2, color: 'white', display: 'block' }}
-                            >
-                                {page}
-                            </Button>
+                        {paths.map(({ path, content }) => (
+                            <Link key={path} href={`/#${path}`} scroll={false}>
+                                <MenuItem key={path} onClick={handleCloseNavMenu}>
+                                    <Typography textAlign="center" className={styles.fuente}>{content}</Typography>
+                                </MenuItem>
+                            </Link>
                         ))}
                     </Box>
                 </Toolbar>

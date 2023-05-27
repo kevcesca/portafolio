@@ -1,13 +1,11 @@
 'use client'
 
 import React from 'react'
-import Image from "next/image"
 import { useRef } from "react";
 import { motion } from "framer-motion";
 
 
 import styles from './Archer.module.css'
-import character from './nikita-yakovlev-char-jump-export.gif'
 
 
 
